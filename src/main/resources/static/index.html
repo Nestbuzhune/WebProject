@@ -2,24 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Image Uploader</title>
+    <title>Image Collection System </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </head>
-<body>
-<h1>Image Uploader</h1>
+<body class="bg-light" style="background-color: antiquewhite;">
+    <fieldset style="background-color: green;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <h1 style="color:white;"> Image Uploading Site </h1>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+    </nav>
+    </fieldset>
+    <br><br>
+            
 
 <form id="uploadForm" enctype="multipart/form-data">
+    <center>
+    <label for="file">Image File:</label>
+    <input type="file" id="file" name="file" required> <br>
+    <br>
+    
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
-
     <label for="description">Description:</label>
-    <textarea id="description" name="description" required></textarea>
+    <textarea id="description" name="description" required></textarea><br><br>
 
-    <label for="file">Image File:</label>
-    <input type="file" id="file" name="file" required>
+    <button type="submit" style="color: blue; font-size: medium;">Upload</button>
+</center>
 
-    <button type="submit">Upload</button>
 </form>
 
 <div id="imageGallery"></div>
